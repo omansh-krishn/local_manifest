@@ -14,5 +14,15 @@
 
  <!-- Clang -->
         <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="Clang" revision="master" />
+ <!-- Extra -->
+        <remove-project path="hardware/custom/compat" name="hardware_custom_compat" />
 
+  <!-- hardware/xiaomi -->
+        <project path="hardware/xiaomi" name="PixelExperience/hardware_xiaomi" remote="github" revision="thirteen" />
+
+  <!-- Clang -->
+        <project path="prebuilts/clang/host/linux-x86/clang-r468909b" name="aosp-clang" remote="Clang" revision="clang-15.0.3" />
+        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="Clang" revision="clang-14.0.6" />
+
+</manifest>
 </manifest>
