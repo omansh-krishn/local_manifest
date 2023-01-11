@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote name="Omansh Krishn" 
+          fetch="https://github.com/omansh-krishn" />
+
+  <remote name="Clang"
+          fetch="https://github.com/kdrag0n" />
+
+  <!-- Trees -->
+        <project path="device/xiaomi/santoni" name="device_xiaomi_santoni" remote="github" revision="13-staging" />
+        <project path="vendor/xiaomi/santoni" name="vendor-santoni" remote="github" revision="12.0" />
+        <project path="kernel/xiaomi/santoni" name="android_kernel_xiaomi_santoni" remote="github" revision="12.1-CAF" /> 
+
+ <!-- Clang -->
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="Clang" revision="master" />
+
+</manifest>
