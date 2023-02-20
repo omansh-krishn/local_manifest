@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <remote name="om" 
-          fetch="https://github.com/omansh-krishn" />
-
-  <remote name="Clang"
-          fetch="https://github.com/kdrag0n" />
-
-  <!-- Trees -->
-        <project path="device/xiaomi/santoni" name="device_xiaomi_santoni" remote="om" revision="evox" />
-        <project path="vendor/xiaomi/santoni" name="vendor-santoni" remote="om" revision="13.0" />
-        <project path="kernel/xiaomi/msm8937" name="android_kernel_xiaomi_santoni" remote="om" revision="12.1-CAF" /> 
-
- <!-- Clang -->
-        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="Clang" revision="master" />
+<remote name="om" fetch="https://github.com/omansh-krishn" />
+<remote name="Clang" fetch="https://github.com/kdrag0n" />
+ <!-- Trees -->
+  <project path="device/xiaomi/santoni" name="device_xiaomi_santoni" remote="om" revision="evox" />
+  <project path="vendor/xiaomi/santoni" name="vendor-santoni" remote="om" revision="13.0" />
+  <project path="kernel/xiaomi/msm8937" name="android_kernel_xiaomi_santoni" remote="om" revision="12.1-CAF" /> 
  <!-- Extra -->
-        <remove-project path="hardware/custom/compat" name="hardware_custom_compat" />
-
-    <!-- Clang -->
-        <project path="prebuilts/clang/host/linux-x86/clang-r468909b" name="aosp-clang" remote="Clang" revision="clang-15.0.3" />
-        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="Clang" revision="clang-14.0.6" />
-
+  <remove-project path="hardware/custom/compat" name="hardware_custom_compat" />
+ <!-- Clang -->
+   <project path="prebuilts/clang/host/linux-x86/clang-r468909b" name="aosp-clang" remote="Clang" revision="clang-15.0.3" />
+   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="Clang" revision="clang-14.0.6" />
+   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="Clang" revision="master" />
 </manifest>
 
