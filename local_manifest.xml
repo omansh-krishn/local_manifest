@@ -11,6 +11,6 @@
 
  <!-- Extra --->
 
-  <remove-project path="hardware/lineage/compat/Android.bp" name="android_hardware_lineage_compat" remote="lineage" />
+  <remove-project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="lineage" />
 
 </manifest>
