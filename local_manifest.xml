@@ -5,6 +5,6 @@
  <!-- Trees -->
   <project path="device/xiaomi/santoni" name="device_xiaomi_santoni" remote="om" revision="evox" />
   <project path="vendor/xiaomi/santoni" name="vendor-santoni" remote="om" revision="13.0" />
-  <project path="kernel/xiaomi/msm8937" name="android_kernel_xiaomi_santoni" remote="om" revision="12.1-CAF" /> 
+  <project path="kernel/xiaomi/msm8937" name="android_kernel_xiaomi_santoni" remote="om" revision="thebestone" /> 
   <remove-project name="android_hardware_lineage_compat" />
 </manifest>
