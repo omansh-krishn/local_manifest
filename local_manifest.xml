@@ -6,6 +6,7 @@
 <!--remote name="clang" fetch="https://gitlab.com/Amritorock" /-->
 <!--remote name="cosmic" fetch="https://gitlab.com/GhostMaster69-dev" /-->
 <!--remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" /-->
+<remote name="code" fetch="https://git.codelinaro.org/clo/la/kernelplatform/prebuilts-master/clang/host/linux-x86"
  <!-- Trees -->
   <project path="device/xiaomi/santoni" name="device_xiaomi_santoni" remote="om" revision="evox" />
   <project path="vendor/xiaomi/santoni" name="vendor-santoni" remote="om" revision="13.0" />
@@ -14,4 +15,5 @@
   <!--project path="prebuilts/clang/host/linux-x86/cosmic-clang" name="cosmic-clang" remote="cosmic" revision="master" clone-depth="1" /-->
   <!--project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="kdrag0n" revision="master" clone-depth="1" /-->
   <!--project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" /-->
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="code" revision="aosp-new/aosp-new/master" />
 </manifest>
