@@ -8,5 +8,5 @@
   <project path="vendor/xiaomi/santoni" name="vendor-santoni" remote="om" revision="13.0" />
   <project path="kernel/xiaomi/msm8937" name="android_kernel_xiaomi_santoni" remote="om" revision="thebestone" />
  <!-- Extra -->
-  <project path="platform/prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 </manifest>
