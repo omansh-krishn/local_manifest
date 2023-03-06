@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote name="om" fetch="https://github.com/omansh-krishn" />
-<!--remote name="pixel" fetch="https://github.com/PixelExperience/" /-->  
+<!--remote name="pixel" fetch="https://github.com/PixelExperience/" /-->
+<remote name="clang" fetch="https://gitlab.com/ImSurajxD" />
  <!-- Trees -->
   <project path="device/xiaomi/santoni" name="device_xiaomi_santoni" remote="om" revision="pe" />
   <project path="vendor/xiaomi/santoni" name="vendor-santoni" remote="om" revision="13.0" />
   <project path="kernel/xiaomi/msm8937" name="android_kernel_xiaomi_santoni" remote="om" revision="thebestone" /> 
  <!-- hardware/xiaomi -->
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pixel" revision="thirteen" />
+ <!-- Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 </manifest>
