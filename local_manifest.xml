@@ -9,4 +9,7 @@
   <project path="kernel/xiaomi/msm8937" name="android_kernel_xiaomi_santoni" remote="om" revision="thebestone" />
  <!-- Extra -->
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+ <!-- Remove -->
+  <remove-project name="android_hardware_lineage_compat" />
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="om" revision="thirteen" />
 </manifest>
