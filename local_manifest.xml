@@ -10,7 +10,7 @@
  <!-- hardware/xiaomi -->
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pixel" revision="thirteen" />
  
-  <remove-project name="hardware_custom_compat" />
+  <remove-project name="hardware_custom_compat" path="hardware/custom/compat" remote="pixel" />
   <project path="hardware/custom/compat" name="hardware_custom_compat" remote="om" revision="thirteen" />
  <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
