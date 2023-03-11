@@ -11,5 +11,5 @@
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
  <!-- Remove -->
   <remove-project name="android_hardware_lineage_compat" />
-  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="om" revision="thirteen" />
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="om" revision="lineage-20.0" />
 </manifest>
