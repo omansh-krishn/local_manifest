@@ -12,6 +12,8 @@
  
   <remove-project name="hardware_custom_compat" />
   <project path="hardware/custom/compat" name="hardware_custom_compat" remote="om" revision="thirteen" />
+  <remove-project path="packages/modules/Bluetooth" name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="bluetooth" remote="om" />
  <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 </manifest>
