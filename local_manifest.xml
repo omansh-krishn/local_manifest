@@ -9,7 +9,7 @@
   <project path="kernel/xiaomi/msm8937" name="android_kernel_xiaomi_santoni" remote="om" revision="thebestone" /> 
  <!-- hardware/xiaomi -->
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pixel" revision="thirteen" />
- 
+ <!-- Remove -->
   <remove-project name="hardware_custom_compat" />
   <project path="hardware/custom/compat" name="hardware_custom_compat" remote="om" revision="thirteen" />
   <remove-project path="packages/modules/Bluetooth" name="platform/packages/modules/Bluetooth" />
