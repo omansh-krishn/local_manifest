@@ -15,9 +15,9 @@
   <remove-project name="hardware_custom_compat" />
   <project path="hardware/custom/compat" name="hardware_custom_compat" remote="om" revision="thirteen" />
  <!-- Clang -->
-  <remove-project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" />
+  <!--remove-project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" /-->
   <!--project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" remote="aosp" revision="refs/tags/android-11.0.0_r46" /-->
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="main-test" clone-depth="1" />
+  <!--project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="main-test" clone-depth="1" /-->
   <project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="proton" revision="master" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86/trb_clang" name="trb_clang" remote="vrn" revision="17" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86/zyc_clang" name="zyc_clang" remote="clang" revision="main" clone-depth="1" />
