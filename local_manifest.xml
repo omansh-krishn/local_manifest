@@ -3,8 +3,8 @@
 <remote name="om" fetch="https://github.com/omansh-krishn" />
 <remote name="santoni" fetch="https://gitlab.com/androidsantoni" />
 <remote name="clang" fetch="https://gitlab.com/clangsantoni" />
-<remote name="vrn" fetch="https://gitlab.com/varunhardgamer" />
-<remote name="proton" fetch="https://github.com/kdrag0n" />
+<!--remote name="vrn" fetch="https://gitlab.com/varunhardgamer" /-->
+<!--remote name="proton" fetch="https://github.com/kdrag0n" /-->
  <!-- Trees -->
   <project path="device/xiaomi/santoni" name="device-tree/device_xiaomi_santoni_ok" remote="santoni" revision="pixelexperience-13-test" clone-depth="1" />
   <project path="vendor/xiaomi/santoni" name="vendor/vendor_xiaomi_santoni" remote="santoni" revision="13.0" clone-depth="1" />
@@ -15,10 +15,7 @@
   <remove-project name="hardware_custom_compat" />
   <project path="hardware/custom/compat" name="hardware_custom_compat" remote="om" revision="thirteen" />
  <!-- Clang -->
-  <!--remove-project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" /-->
-  <!--project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" remote="aosp" revision="refs/tags/android-11.0.0_r46" /-->
-  <!--project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="main-test" clone-depth="1" /-->
-  <project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="proton" revision="master" clone-depth="1" />
-  <project path="prebuilts/clang/host/linux-x86/trb_clang" name="trb_clang" remote="vrn" revision="17" clone-depth="1" />
+  <!--project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="proton" revision="master" clone-depth="1" /-->
+  <!--project path="prebuilts/clang/host/linux-x86/trb_clang" name="trb_clang" remote="vrn" revision="17" clone-depth="1" /-->
   <project path="prebuilts/clang/host/linux-x86/zyc_clang" name="zyc_clang" remote="clang" revision="main" clone-depth="1" />
 </manifest>
