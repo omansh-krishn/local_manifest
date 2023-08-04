@@ -7,18 +7,19 @@
 
 <!-- Trees /-->
 
-  <project path="device/xiaomi/santoni" name="device-tree/device_xiaomi_santoni_ok" remote="santoni" revision="pixelexperience-13" clone-depth="1" />
+  <project path="device/xiaomi/santoni" name="device-tree/device_xiaomi_santoni_ok" remote="santoni" revision="pixelexperience-13-test" clone-depth="1" />
   <project path="vendor/xiaomi/santoni" name="vendor/vendor_xiaomi_santoni" remote="santoni" revision="13.0" clone-depth="1" />
   <project path="kernel/xiaomi/msm8937" name="kernel/kernel-xiaomi-msm8937_ok" remote="santoni" revision="13" clone-depth="1" />
-
-<!-- hardware/xiaomi /-->
-
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pixelextended-devices" revision="trece" />
 
 <!-- hardware_custom_compat /-->
 
   <remove-project name="hardware_custom_compat" />
   <project path="hardware/custom/compat" name="hardware_custom_compat" remote="om" revision="thirteen" />
+
+<!-- OTA -->
+
+  <remove-project name="packages_apps_Updates" />
+  <project path="packages/apps/Updates" name="pex_packages_apps_Updates" remote="om" revision="thunder" />
 
 <!-- Clang /-->
 
