@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="mi-thorium" fetch="https://github.com/Mi-Thorium" revision="a13/lineage" />
+        <remote name="om" fetch="https://github.com/omansh-krishn" />
+        <remote name="santoni" fetch="https://gitlab.com/androidsantoni" />
+        <remote name="clang" fetch="https://gitlab.com/clangsantoni" />
+        <!-- Common -->
+        <project path="device/xiaomi/mithorium-common"          name="android_device_xiaomi_mithorium-common"               groups="device" remote="mi-thorium"/>
+        <project path="vendor/xiaomi/mithorium-common"          name="proprietary_vendor_xiaomi_mithorium-common"           groups="device" remote="mi-thorium" revision="a12/master"/>
+        <project path="vendor/xiaomi/mithorium-common-graphics" name="proprietary_vendor_xiaomi_mithorium-common-graphics"  groups="device" remote="mi-thorium" revision="a11/master"/>
+        <!-- Hardware -->
+        <project path="hardware/mithorium-4.9"            name="android_hardware_mithorium-4.9"  groups="device" remote="mi-thorium" revision="lineage-19.1-k4.9"/>
+        <project path="hardware/mithorium-4.9-q-display"  name="android_hardware_mithorium-4.9"  groups="device" remote="mi-thorium" revision="lineage-19.1-k4.9-q-display"/>
+        <!-- Mi8937 -->
+        <project path="kernel/xiaomi/msm8937"       name="android_kernel_xiaomi_msm8937"                       remote="om"         revision="lineage-20" />
+        <project path="device/xiaomi/Mi8937"        name="android_device_xiaomi_Mi8937"        groups="device" remote="om"         revision="a13/lineage" />
+        <project path="vendor/xiaomi/Mi8937"        name="proprietary_vendor_xiaomi_Mi8937"    groups="device" remote="mi-thorium" revision="a11/master"/>
+        <project path="vendor/xiaomi/Mi8937-2"      name="proprietary_vendor_xiaomi_Mi8937-2"  groups="device" remote="mi-thorium" revision="a11/master"/>
+        <project path="device/xiaomi/land-camera"   name="android_device_xiaomi_land-camera"   groups="device" remote="mi-thorium" revision="sairam/a11/master"/>
+        <project path="device/xiaomi/mi8937-camera" name="android_device_xiaomi_mi8937-camera" groups="device" remote="mi-thorium" revision="a11/master"/>
+        <project path="device/xiaomi/prada-camera"  name="android_device_xiaomi_prada-camera"  groups="device" remote="mi-thorium" revision="a11/master"/>
+        <!-- OTA -->
+        <remove-project name="packages_apps_Updates" />
+        <project path="packags/apps/Updates" name="rising_packages_apps_Updates" remote="om" revision="thirteen" />
+        <!-- hardware_custom_compat /-->
+        <!-- <remove-project name="hardware_custom_compat" /> -->
+        <!-- <project path="hardware/custom/compat" name="hardware_custom_compat" remote="om" revision="thirteen" /> -->
+        <!-- Clang /-->
+        <project path="prebuilts/clang/host/linux-x86/zyc_clang" name="zyc_clang" remote="clang" revision="14" clone-depth="1" />
+    </manifest>
