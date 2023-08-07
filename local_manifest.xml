@@ -21,7 +21,7 @@
         <project path="device/xiaomi/prada-camera"                  name="android_device_xiaomi_prada-camera"                   groups="device" remote="mi-thorium" revision="a11/master"                   clone-depth="1" />
         <!-- OTA -->
         <remove-project name="RisingTechOSS/android_packages_apps_Updater" />
-        <project path="packags/apps/Updater"                        name="rising_packages_apps_Updater"                                         remote="om"         revision="thirteen"                     clone-depth="1" />
+        <project path="packages/apps/Updater"                        name="rising_packages_apps_Updater"                                         remote="om"         revision="thirteen"                     clone-depth="1" />
         <!-- hardware_custom_compat /-->
         <!-- <remove-project name="hardware_custom_compat" -->
         <!-- <project path="hardware/custom/compat"                 name="hardware_custom_compat"                                               remote="om"         revision="thirteen" -->
