@@ -15,7 +15,7 @@
 <!-- hardware_custom_compat /-->
 
   <remove-project name="LineageOS/android_hardware_lineage_compat" />
-  <project path="hardware/lineage/compat"                   name="android_hardware_lineage_compat"      remote="om"       revision="thirteen" />
+  <project path="hardware/lineage/compat"                   name="android_hardware_lineage_compat"      remote="om"       revision="lineage-20.0" />
   
 <!-- OTA -->
   <remove-project name="RisingTechOSS/android_packages_apps_Updater" />
