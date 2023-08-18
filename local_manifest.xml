@@ -19,8 +19,11 @@
   
 <!-- OTA -->
   <remove-project name="RisingTechOSS/android_packages_apps_Updater" />
-  <project path="packages/apps/Updater"                        name="rising_packages_apps_Updater"      remote="om"       revision="thirteen"         clone-depth="1" />
+  <project path="packages/apps/Updater"                     name="rising_packages_apps_Updater"         remote="om"       revision="thirteen"         clone-depth="1" />
 
+<!-- OTA JSON-->
+  <remove-project name="RisingOSS-devices/android_vendor_RisingOTA" />
+  <project path="vendor/risingOTA"                          name="android_vendor_RisingOTA"             remote="om"       revision="thirteen"     />
 <!-- Clang /-->
 
   <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                            remote="clang"    revision="14"               clone-depth="1" />
