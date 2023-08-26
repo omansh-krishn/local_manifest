@@ -18,9 +18,6 @@
   <project path="hardware/lineage/compat"                   name="android_hardware_lineage_compat"      remote="om"       revision="lineage-20.0" />
   
 <!-- OTA -->
-  <remove-project name="packages_apps_Updater"                     />
-  <project path="packages/apps/Updater"                     name="alpha_packages_apps_Updater"          remote="om"       revision="alpha-13"         clone-depth="1" />
-
   <remove-project name="alphadroid-devices/OTA"                    />
   <project path="vendor/OTA"                                name="alpha_OTA"                            remote="om"       revision="alpha-13"                         />
 <!-- Clang /-->
