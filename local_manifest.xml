@@ -10,16 +10,16 @@
 <!-- REVIVE-->
 
 <remove-project name="LineageOS/android_packages_apps_Eleven" />
-<project path="packages/apps/Eleven" name="LineageOS-Revived/android_packages_apps_Eleven" />
+<project path="packages/apps/Eleven" name="LineageOS-Revived/android_packages_apps_Eleven" remote="github"/>
 
 <remove-project name="LineageOS/android_packages_apps_Jelly" />
-<project path="packages/apps/Jelly" name="LineageOS-Revived/android_packages_apps_Jelly" />
+<project path="packages/apps/Jelly" name="LineageOS-Revived/android_packages_apps_Jelly" remote="github"/>
 
 <remove-project name="LineageOS/android_vendor_nxp_opensource_external_libnfc-nci" />
-<project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="LineageOS-Revived/android_vendor_nxp_opensource_external_libnfc-nci" />
+<project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="LineageOS-Revived/android_vendor_nxp_opensource_external_libnfc-nci" remote="github"/>
 
 <remove-project name="LineageOS/android_vendor_nxp_opensource_halimpl" />
-<project path="vendor/nxp/opensource/pn5xx/halimpl" name="LineageOS-Revived/android_vendor_nxp_opensource_halimpl" revision="lineage-17.1-pn5xx" />
+<project path="vendor/nxp/opensource/pn5xx/halimpl" name="LineageOS-Revived/android_vendor_nxp_opensource_halimpl" revision="lineage-17.1-pn5xx" remote="github"/>
 
 <!-- Infrastructure >
   <project path="lineage/ansible" name="LineageOS/ansible" groups="infra" revision="master" />
@@ -37,16 +37,17 @@
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel,pdk" revision="master" remote="aosp" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel,pdk" revision="master" remote="aosp" />
   <project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel,pdk" revision="master" remote="aosp" />
-  <project path="hardware/intel/common/libva" name="platform/hardware/intel/common/libva" groups="intel,pdk" revision="master" remote="aosp" />   <project path="hardware/intel/common/libwsbm" name="platform/hardware/intel/common/libwsbm" groups="intel,pdk" revision="master" remote="aosp" />
+  <project path="hardware/intel/common/libva" name="platform/hardware/intel/common/libva" groups="intel,pdk" revision="master" remote="aosp" />   
+  <project path="hardware/intel/common/libwsbm" name="platform/hardware/intel/common/libwsbm" groups="intel,pdk" revision="master" remote="aosp" />
   <project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel,pdk" revision="master" remote="aosp" />
   <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors,pdk" revision="master" remote="aosp" />
-  <project path="hardware/intel/bootstub" name="LineageOS/android_hardware_intel_bootstub" groups="intel,pdk" revision="lineage-17.1" />
-  <project path="hardware/intel/common/libmix" name="LineageOS/android_hardware_intel_common_libmix" groups="intel,pdk" revision="lineage-17.1" />
-  <project path="hardware/intel/common/omx-components" name="LineageOS/android_hardware_intel_common_omx-components" groups="intel,pdk" revision="lineage-17.1" />
-  <project path="hardware/intel/common/utils" name="LineageOS/android_hardware_intel_common_utils" groups="intel,pdk" revision="lineage-17.1" />
-  <project path="hardware/intel/img/hwcomposer" name="LineageOS/android_hardware_intel_img_hwcomposer" groups="intel,pdk" revision="lineage-17.1" />
-  <project path="hardware/intel/img/psb_headers" name="LineageOS/android_hardware_intel_img_psb_headers" groups="intel,pdk" revision="lineage-17.1" />
-  <project path="hardware/intel/img/psb_video" name="LineageOS/android_hardware_intel_img_psb_video" groups="intel,pdk" revision="lineage-17.1" />
+  <project path="hardware/intel/bootstub" name="LineageOS/android_hardware_intel_bootstub" groups="intel,pdk" revision="lineage-17.1" remote="github"/>
+  <project path="hardware/intel/common/libmix" name="LineageOS/android_hardware_intel_common_libmix" groups="intel,pdk" revision="lineage-17.1" remote="github"/>
+  <project path="hardware/intel/common/omx-components" name="LineageOS/android_hardware_intel_common_omx-components" groups="intel,pdk" revision="lineage-17.1" remote="github"/>
+  <project path="hardware/intel/common/utils" name="LineageOS/android_hardware_intel_common_utils" groups="intel,pdk" revision="lineage-17.1" remote="github"/>
+  <project path="hardware/intel/img/hwcomposer" name="LineageOS/android_hardware_intel_img_hwcomposer" groups="intel,pdk" revision="lineage-17.1" remote="github"/>
+  <project path="hardware/intel/img/psb_headers" name="LineageOS/android_hardware_intel_img_psb_headers" groups="intel,pdk" revision="lineage-17.1" remote="github"/>
+  <project path="hardware/intel/img/psb_video" name="LineageOS/android_hardware_intel_img_psb_video" groups="intel,pdk" revision="lineage-17.1" remote="github"/>
 
   <!--rrxml-->
   <!--BUILD-->
@@ -89,84 +90,84 @@
 
   <!--default.xml-->
   <remove-project path="art" name="LineageOS/android_art" groups="pdk" />
-  <project path="art" name="LineageOS-Revived/android_art" groups="pdk" />
+  <project path="art" name="LineageOS-Revived/android_art" groups="pdk" remote="github"/>
 
   <remove-project path="external/chromium-webview" name="LineageOS/android_external_chromium-webview" groups="pdk" revision="master" clone-depth="1" />
-  <project path="external/chromium-webview/patches" name="LineageOS/android_external_chromium-webview_patches" groups="pdk" revision="main" >
+  <project path="external/chromium-webview/patches" name="LineageOS/android_external_chromium-webview_patches" groups="pdk" revision="main" remote="github" >
     <linkfile src="Android.mk" dest="external/chromium-webview/Android.mk" />
     <linkfile src="CleanSpec.mk" dest="external/chromium-webview/CleanSpec.mk" />
     <linkfile src="README" dest="external/chromium-webview/README" />
   </project>
-  <project path="external/chromium-webview/prebuilt/arm" name="LineageOS/android_external_chromium-webview_prebuilt_arm" groups="pdk" clone-depth="1" revision="main" />
-  <project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="main" />
-  <project path="external/chromium-webview/patches" name="LineageOS/android_external_chromium-webview_patches" groups="pdk" revision="main" >
+  <project path="external/chromium-webview/prebuilt/arm" name="LineageOS/android_external_chromium-webview_prebuilt_arm" groups="pdk" clone-depth="1" revision="main" remote="github"/>
+  <project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="main" remote="github"/>
+  <project path="external/chromium-webview/patches" name="LineageOS/android_external_chromium-webview_patches" groups="pdk" revision="main" remote="github">
     <linkfile src="Android.mk" dest="external/chromium-webview/Android.mk" />
     <linkfile src="CleanSpec.mk" dest="external/chromium-webview/CleanSpec.mk" />
     <linkfile src="README" dest="external/chromium-webview/README" />
   </project>
-  <project path="external/chromium-webview/prebuilt/arm" name="LineageOS/android_external_chromium-webview_prebuilt_arm" groups="pdk" clone-depth="1" revision="main" />
+  <project path="external/chromium-webview/prebuilt/arm" name="LineageOS/android_external_chromium-webview_prebuilt_arm" groups="pdk" clone-depth="1" revision="main" remote="github"/>
 
   <remove-project path="external/dtc" name="platform/external/dtc" groups="pdk" remote="aosp" />
-  <project path="external/dtc" name="LineageOS/android_external_dtc" groups="pdk" />
+  <project path="external/dtc" name="LineageOS/android_external_dtc" groups="pdk" remote="github"/>
 
   <remove-project path="external/expat" name="platform/external/expat" groups="pdk" remote="aosp" />
-  <project path="external/expat" name="LineageOS/android_external_expat" groups="pdk" />
+  <project path="external/expat" name="LineageOS/android_external_expat" groups="pdk" remote="github"/>
 
   <remove-project path="external/icu" name="LineageOS/android_external_icu" groups="pdk" />
-  <project path="external/icu" name="LineageOS-Revived/android_external_icu" groups="pdk" />
+  <project path="external/icu" name="LineageOS-Revived/android_external_icu" groups="pdk" remote="github"/>
 
   <remove-project path="external/tremolo" name="platform/external/tremolo" groups="pdk" remote="aosp" />
-  <project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="main" />
+  <project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="main" remote="github"/>
 
   <remove-project path="external/zlib" name="platform/external/zlib" groups="pdk" remote="aosp" />
-  <project path="external/zlib" name="LineageOS-Revived/android_external_zlib" groups="pdk" />
+  <project path="external/zlib" name="LineageOS-Revived/android_external_zlib" groups="pdk" remote="github"/>
 
   <remove-project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk" remote="aosp" />
-  <project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="main" />
+  <project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="main" remote="github"/>
 
   <remove-project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="main" />
-  <project path="frameworks/opt/net/wifi" name="LineageOS/android_frameworks_opt_net_wifi" groups="pdk" />
+  <project path="frameworks/opt/net/wifi" name="LineageOS/android_frameworks_opt_net_wifi" groups="pdk" remote="github"/>
 
   <remove-project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" groups="qcom_sm8150" remote="aosp" />
-  <project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="LineageOS/android_hardware_qcom_sm8150_data_ipacfg-mgr" groups="qcom_sm8150" >
+  <project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="LineageOS/android_hardware_qcom_sm8150_data_ipacfg-mgr" groups="qcom_sm8150" remote="github">
     <linkfile src="os_pickup.bp" dest="hardware/qcom/sm8150/Android.bp" />
   </project>
 
   <remove-project path="hardware/qcom/sm8150/display" name="platform/hardware/qcom/sm8150/display" groups="qcom_sm8150" remote="aosp" />
-  <project path="hardware/qcom/sm8150/display" name="LineageOS/android_hardware_qcom_sm8150_display" groups="qcom_sm8150" />
+  <project path="hardware/qcom/sm8150/display" name="LineageOS/android_hardware_qcom_sm8150_display" groups="qcom_sm8150" remote="github"/>
 
   <remove-project path="hardware/qcom/sm8150/media" name="platform/hardware/qcom/sm8150/media" groups="qcom_sm8150" remote="aosp" />
-  <project path="hardware/qcom/sm8150/media" name="LineageOS/android_hardware_qcom_sm8150_media" groups="qcom_sm8150" />
+  <project path="hardware/qcom/sm8150/media" name="LineageOS/android_hardware_qcom_sm8150_media" groups="qcom_sm8150" remote="github"/>
 
   <remove-project path="libcore" name="LineageOS/android_libcore" groups="pdk" />
-  <project path="libcore" name="LineageOS-Revived/android_libcore" groups="pdk" />
+  <project path="libcore" name="LineageOS-Revived/android_libcore" groups="pdk" remote="github"/>
 
   <remove-project path="packages/apps/Car/Settings" name="platform/packages/apps/Car/Settings" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/Car/Settings" name="LineageOS-Revived/android_packages_apps_Car_Settings" groups="pdk-fs" />
+  <project path="packages/apps/Car/Settings" name="LineageOS-Revived/android_packages_apps_Car_Settings" groups="pdk-fs" remote="github"/>
 
   <remove-project path="packages/apps/Gallery2" name="LineageOS/android_packages_apps_Gallery2" groups="pdk-fs" />
-  <project path="packages/apps/Gallery2" name="LineageOS-Revived/android_packages_apps_Gallery2" groups="pdk-fs" />
+  <project path="packages/apps/Gallery2" name="LineageOS-Revived/android_packages_apps_Gallery2" groups="pdk-fs" remote="github"/>
 
   <remove-project path="packages/apps/Traceur" name="LineageOS/android_packages_apps_Traceur" groups="pdk-fs" />
   <remove-project path="packages/apps/TvSettings" name="LineageOS/android_packages_apps_TvSettings" groups="pdk-fs" />
   <remove-project path="packages/apps/TV" name="LineageOS/android_packages_apps_TV" groups="pdk" />
-  <project path="packages/apps/Traceur" name="LineageOS-Revived/android_packages_apps_Traceur" groups="pdk-fs" />
-  <project path="packages/apps/TvSettings" name="LineageOS-Revived/android_packages_apps_TvSettings" groups="pdk-fs" />
+  <project path="packages/apps/Traceur" name="LineageOS-Revived/android_packages_apps_Traceur" groups="pdk-fs" remote="github"/>
+  <project path="packages/apps/TvSettings" name="LineageOS-Revived/android_packages_apps_TvSettings" groups="pdk-fs" remote="github"/>
   <project path="packages/apps/TV" name="platform/packages/apps/TV" groups="pdk" remote="aosp" />
 
   <remove-project path="packages/inputmethods/LatinIME" name="LineageOS/android_packages_inputmethods_LatinIME" groups="pdk-fs" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="legacy"  groups="pdk-fs" />
 
   <remove-project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="packages/services/Car" name="LineageOS/android_packages_services_Car" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/services/Car" name="LineageOS/android_packages_services_Car" groups="pdk-cw-fs,pdk-fs" remote="github"/>
 
   <remove-project path="system/nfc" name="LineageOS/android_system_nfc" groups="pdk" />
-  <project path="system/nfc" name="LineageOS-Revived/android_system_nfc" groups="pdk" />
+  <project path="system/nfc" name="LineageOS-Revived/android_system_nfc" groups="pdk" remote="github"/>
 
   <remove-project path="system/timezone" name="LineageOS/android_system_timezone" groups="pdk" />
   <remove-project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk" remote="aosp" />
-  <project path="system/timezone" name="LineageOS-Revived/android_system_timezone" groups="pdk" />
-  <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" />
+  <project path="system/timezone" name="LineageOS-Revived/android_system_timezone" groups="pdk" remote="github"/>
+  <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" remote="github"/>
 
   <!--revived.xml-->
 <!--?xml version="1.0" encoding="UTF-8"?-->
@@ -227,7 +228,7 @@
   <!-- MindTheGapps -->
   <project path="vendor/gapps" name="MindTheGapps/vendor_gapps" remote="gitlab" revision="qoppa" />
   <!-- MicroG -->
-  <project path="vendor/partner_gms" name="lineageos4microg/android_vendor_partner_gms" revision="master" />
+  <project path="vendor/partner_gms" name="lineageos4microg/android_vendor_partner_gms" revision="master" remote="github"/>
 <!--/manifest-->
 
 <!-- Trees -->
@@ -236,16 +237,6 @@
   <project path="vendor/xiaomi"                             name="jabiyeff-project/vendor-santoni"      remote="santoni"  revision="11.0"    clone-depth="1" />
   <project path="kernel/xiaomi/santoni"                     name="jabiyeff-project/kernel-santoni"      remote="santoni"  revision="11.0"    clone-depth="1" /> 
 
-<!-- OTA -->
-
-  <remove-project name="crdroidandroid/android_packages_apps_Updater" />
-  <project path="packages/apps/Updater"                     name="crdoid_android_packages_apps_Updater" remote="om"       revision="11.0" />
-
-<!-- Vendor -->
-
-  <remove-project name="crdroidandroid/android_vendor_crdroid" />
-  <project path="vendor/lineage"                            name="android_vendor_crdroid"               remote="om"       revision="11.0" />
-  
 <!-- Clang -->
   
   <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                            remote="clang"    revision="14"      clone-depth="1" />
