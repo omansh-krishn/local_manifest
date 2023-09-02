@@ -54,7 +54,7 @@
 
   <remove-project path="android" name="platform_manifest" remote="rr"/>
   <remove-project path="build/make" name="android_build" remote="rr" />
-  <remove-project path="build/soong" name="android_build_soong" remote="rr" >
+  <remove-project path="build/soong" name="android_build_soong" remote="rr" />
   <!--VENDOR-->
   <remove-project path="vendor/rr" name="android_vendor_resurrection" remote="rr"/>
   <!--Lineage-Sdk-->
