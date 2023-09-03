@@ -62,7 +62,7 @@
   <!--Apps-->
   <remove-project path="packages/apps/Settings" name="Resurrection_packages_apps_Settings" remote="rr" />
   <remove-project path="packages/apps/LineageParts" name="packages_apps_LineageParts"  remote="rr"/>
-  <remove-projectproject path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="rr"/> 
+  <remove-project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="rr"/> 
   <remove-project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="rr" /> 
   <remove-project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="rr" />
   <remove-project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="rr" />
