@@ -52,50 +52,50 @@
   <!--rrxml-->
   <!--BUILD-->
 
-  <remove-project path="android" name="platform_manifest" remote="rr"/>
-  <remove-project path="build/make" name="android_build" remote="rr" />
-  <remove-project path="build/soong" name="android_build_soong" remote="rr" />
+  <remove-project name="platform_manifest" remote="rr"/>
+  <remove-project name="android_build" remote="rr" />
+  <remove-project name="android_build_soong" remote="rr" />
   <!--VENDOR-->
-  <remove-project path="vendor/rr" name="android_vendor_resurrection" remote="rr"/>
+  <remove-project name="android_vendor_resurrection" remote="rr"/>
   <!--Lineage-Sdk-->
-  <remove-project path="lineage-sdk" name="lineage-sdk" remote="rr"/>
+  <remove-project name="lineage-sdk" remote="rr"/>
   <!--Apps-->
-  <remove-project path="packages/apps/Settings" name="Resurrection_packages_apps_Settings" remote="rr" />
-  <remove-project path="packages/apps/LineageParts" name="packages_apps_LineageParts"  remote="rr"/>
-  <remove-project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="rr"/> 
-  <remove-project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="rr" /> 
-  <remove-project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="rr" />
-  <remove-project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="rr" />
-  <remove-project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="rr" />
-  <remove-project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="rr" />
+  <remove-project name="Resurrection_packages_apps_Settings" remote="rr" />
+  <remove-project name="packages_apps_LineageParts"  remote="rr"/>
+  <remove-project name="packages_apps_SettingsIntelligence" remote="rr"/> 
+  <remove-project name="packages_apps_Contacts" remote="rr" /> 
+  <remove-project name="packages_apps_DeskClock" remote="rr" />
+  <remove-project name="packages_apps_Dialer" remote="rr" />
+  <remove-project name="packages_apps_Messaging" remote="rr" />
+  <remove-project name="packages_apps_Bluetooth" remote="rr" />
     <!--Frameworks-->
-  <remove-project path="frameworks/base" name="android_frameworks_base" remote="rr" />
-  <remove-project path="frameworks/av" name="frameworks_av" remote="rr" />
-  <remove-project path="frameworks/native" name="frameworks_native" remote="rr" />
-  <remove-project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="rr" />
-  <remove-project path="device/rr/sepolicy" name="device_rr_sepolicy" remote="rr" />
-  <remove-project path="system/sepolicy" name="system_sepolicy" remote="rr" /> 
-  <remove-project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy-legacy" remote="rr" />
-  <remove-project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="rr" /> 
+  <remove-project name="android_frameworks_base" remote="rr" />
+  <remove-project name="frameworks_av" remote="rr" />
+  <remove-project name="frameworks_native" remote="rr" />
+  <remove-project name="frameworks_opt_telephony" remote="rr" />
+  <remove-project name="device_rr_sepolicy" remote="rr" />
+  <remove-project name="system_sepolicy" remote="rr" /> 
+  <remove-project name="android_device_qcom_sepolicy-legacy" remote="rr" />
+  <remove-project name="android_device_qcom_sepolicy-legacy-um" remote="rr" /> 
   
   <!--System-->
-  <remove-project path="system/core" name="android_system_core" remote="rr" />
-  <remove-project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="rr" />
-  <remove-project path="packages/services/Telephony" name="packages_services_Telephony" remote="rr" />
-  <remove-project path="packages/apps/SetupWizard" name="SetupWizard" remote="rr" />
-  <remove-project path="hardware/lineage/interfaces" name="hardware_rr_interfaces" remote="rr"/>
-  <remove-project path="system/bt" name="android_system_bt" remote="rr" />
-  <remove-project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="rr" />
-  <remove-project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="rr" />
-  <remove-project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="rr" /> 
-  <remove-project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="rr" />
-  <remove-project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi"  remote="rr" />
+  <remove-project name="android_system_core" remote="rr" />
+  <remove-project name="packages_services_Telecomm" remote="rr" />
+  <remove-project name="packages_services_Telephony" remote="rr" />
+  <remove-project name="SetupWizard" remote="rr" />
+  <remove-project name="hardware_rr_interfaces" remote="rr"/>
+  <remove-project name="android_system_bt" remote="rr" />
+  <remove-project name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="rr" />
+  <remove-project name="android_vendor_qcom_opensource_system_bt" remote="rr" />
+  <remove-project name="packages_apps_PackageInstaller" remote="rr" /> 
+  <remove-project name="packages_providers_MediaProvider" remote="rr" />
+  <remove-project name="android_frameworks_opt_net_wifi"  remote="rr" />
 
   <!--default.xml-->
-  <remove-project path="art" name="LineageOS/android_art" groups="pdk" />
+  <remove-project name="LineageOS/android_art" />
   <project path="art" name="LineageOS-Revived/android_art" groups="pdk" remote="github"/>
 
-  <remove-project path="external/chromium-webview" name="LineageOS/android_external_chromium-webview" groups="pdk" revision="master" clone-depth="1" />
+  <remove-project name="LineageOS/android_external_chromium-webview" revision="master" />
   <project path="external/chromium-webview/patches" name="LineageOS/android_external_chromium-webview_patches" groups="pdk" revision="main" remote="github" >
     <linkfile src="Android.mk" dest="external/chromium-webview/Android.mk" />
     <linkfile src="CleanSpec.mk" dest="external/chromium-webview/CleanSpec.mk" />
@@ -104,65 +104,65 @@
   <project path="external/chromium-webview/prebuilt/arm" name="LineageOS/android_external_chromium-webview_prebuilt_arm" groups="pdk" clone-depth="1" revision="main" remote="github"/>
   <project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="main" remote="github"/>
 
-  <remove-project path="external/dtc" name="platform/external/dtc" groups="pdk" remote="aosp" />
+  <remove-project name="platform/external/dtc" remote="aosp" />
   <project path="external/dtc" name="LineageOS/android_external_dtc" groups="pdk" remote="github"/>
 
-  <remove-project path="external/expat" name="platform/external/expat" groups="pdk" remote="aosp" />
+  <remove-project name="platform/external/expat" remote="aosp" />
   <project path="external/expat" name="LineageOS/android_external_expat" groups="pdk" remote="github"/>
 
-  <remove-project path="external/icu" name="LineageOS/android_external_icu" groups="pdk" />
+  <remove-project name="LineageOS/android_external_icu" />
   <project path="external/icu" name="LineageOS-Revived/android_external_icu" groups="pdk" remote="github"/>
 
-  <remove-project path="external/tremolo" name="platform/external/tremolo" groups="pdk" remote="aosp" />
+  <remove-project name="platform/external/tremolo" remote="aosp" />
   <project path="external/tremolo" name="LineageOS/android_external_tremolo" groups="pdk" remote="github"/>
 
-  <remove-project path="external/zlib" name="platform/external/zlib" groups="pdk" remote="aosp" />
+  <remove-project name="platform/external/zlib" remote="aosp" />
   <project path="external/zlib" name="LineageOS-Revived/android_external_zlib" groups="pdk" remote="github"/>
 
-  <remove-project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk" remote="aosp" />
+  <remove-project name="platform/frameworks/ml" remote="aosp" />
   <project path="frameworks/ml" name="LineageOS/android_frameworks_ml" groups="pdk" remote="github"/>
 
-  <remove-project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi"  remote="rr" />
+  <remove-project name="android_frameworks_opt_net_wifi"  remote="rr" />
   <project path="frameworks/opt/net/wifi" name="LineageOS/android_frameworks_opt_net_wifi" groups="pdk" remote="github"/>
 
-  <remove-project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" groups="qcom_sm8150" remote="aosp" />
+  <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" remote="aosp" />
   <project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="LineageOS/android_hardware_qcom_sm8150_data_ipacfg-mgr" groups="qcom_sm8150" remote="github">
     <linkfile src="os_pickup.bp" dest="hardware/qcom/sm8150/Android.bp" />
   </project>
 
-  <remove-project path="hardware/qcom/sm8150/display" name="platform/hardware/qcom/sm8150/display" groups="qcom_sm8150" remote="aosp" />
+  <remove-project name="platform/hardware/qcom/sm8150/display" remote="aosp" />
   <project path="hardware/qcom/sm8150/display" name="LineageOS/android_hardware_qcom_sm8150_display" groups="qcom_sm8150" remote="github"/>
 
-  <remove-project path="hardware/qcom/sm8150/media" name="platform/hardware/qcom/sm8150/media" groups="qcom_sm8150" remote="aosp" />
+  <remove-project name="platform/hardware/qcom/sm8150/media" remote="aosp" />
   <project path="hardware/qcom/sm8150/media" name="LineageOS/android_hardware_qcom_sm8150_media" groups="qcom_sm8150" remote="github"/>
 
-  <remove-project path="libcore" name="LineageOS/android_libcore" groups="pdk" />
+  <remove-project name="LineageOS/android_libcore" />
   <project path="libcore" name="LineageOS-Revived/android_libcore" groups="pdk" remote="github"/>
 
-  <remove-project path="packages/apps/Car/Settings" name="platform/packages/apps/Car/Settings" groups="pdk-fs" remote="aosp" />
+  <remove-project name="platform/packages/apps/Car/Settings" remote="aosp" />
   <project path="packages/apps/Car/Settings" name="LineageOS-Revived/android_packages_apps_Car_Settings" groups="pdk-fs" remote="github"/>
 
-  <remove-project path="packages/apps/Gallery2" name="LineageOS/android_packages_apps_Gallery2" groups="pdk-fs" />
+  <remove-project name="LineageOS/android_packages_apps_Gallery2" />
   <project path="packages/apps/Gallery2" name="LineageOS-Revived/android_packages_apps_Gallery2" groups="pdk-fs" remote="github"/>
 
-  <remove-project path="packages/apps/Traceur" name="LineageOS/android_packages_apps_Traceur" groups="pdk-fs" />
-  <remove-project path="packages/apps/TvSettings" name="LineageOS/android_packages_apps_TvSettings" groups="pdk-fs" />
-  <remove-project path="packages/apps/TV" name="LineageOS/android_packages_apps_TV" groups="pdk" />
+  <remove-project name="LineageOS/android_packages_apps_Traceur" />
+  <remove-project name="LineageOS/android_packages_apps_TvSettings" />
+  <remove-project name="LineageOS/android_packages_apps_TV" />
   <project path="packages/apps/Traceur" name="LineageOS-Revived/android_packages_apps_Traceur" groups="pdk-fs" remote="github"/>
   <project path="packages/apps/TvSettings" name="LineageOS-Revived/android_packages_apps_TvSettings" groups="pdk-fs" remote="github"/>
   <project path="packages/apps/TV" name="platform/packages/apps/TV" groups="pdk" remote="aosp" />
 
-  <remove-project path="packages/inputmethods/LatinIME" name="LineageOS/android_packages_inputmethods_LatinIME" groups="pdk-fs" />
+  <remove-project name="LineageOS/android_packages_inputmethods_LatinIME" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="legacy"  groups="pdk-fs" />
 
-  <remove-project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <remove-project name="platform/packages/services/Car" remote="aosp" />
   <project path="packages/services/Car" name="LineageOS/android_packages_services_Car" groups="pdk-cw-fs,pdk-fs" remote="github"/>
 
-  <remove-project path="system/nfc" name="LineageOS/android_system_nfc" groups="pdk" />
+  <remove-project name="LineageOS/android_system_nfc" />
   <project path="system/nfc" name="LineageOS-Revived/android_system_nfc" groups="pdk" remote="github"/>
 
-  <remove-project path="system/timezone" name="LineageOS/android_system_timezone" groups="pdk" />
-  <remove-project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk" remote="aosp" />
+  <remove-project name="LineageOS/android_system_timezone" />
+  <remove-project name="platform/system/tools/aidl" remote="aosp" />
 
   <project path="system/timezone" name="LineageOS-Revived/android_system_timezone" groups="pdk" remote="github"/>
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" remote="github"/>
