@@ -221,7 +221,7 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="rr-r" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="rr-r" />
   <!-- Vendor -->
-  <project path="vendor/rr" name="vendor_resurrection" remote="rr-r"/>
+  <!-- Tracking my own vendor fork project path="vendor/rr" name="vendor_resurrection" remote="rr-r"/-->
   <!-- Additions -->
   <!-- MindTheGapps -->
   <project path="vendor/gapps" name="MindTheGapps/vendor_gapps" remote="gitlab" revision="qoppa" />
@@ -235,6 +235,10 @@
   <project path="device/xiaomi/santoni"                     name="device-tree/device_xiaomi_santoni_ok" remote="santoni"  revision="{WIP}rr-10{WIP}" clone-depth="1" />
   <project path="vendor/xiaomi"                             name="vendor/vendor_xiaomi_santoni-ok"      remote="santoni"  revision="10.0"             clone-depth="1" />
   <project path="kernel/xiaomi/msm8937"                     name="jrhimel/kernel_xiaomi_santoni_msm4.9" remote="santoni"  revision="treble"          clone-depth="1" /> 
+
+<!-- Vendor -->
+
+  <project path="vendor/rr" name="vendor_resurrection" remote="om" revision="Q" />
 
 <!-- Updater -->
 
