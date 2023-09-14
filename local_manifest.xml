@@ -226,7 +226,7 @@
   <!-- MindTheGapps -->
   <project path="vendor/gapps" name="MindTheGapps/vendor_gapps" remote="gitlab" revision="qoppa" />
   <!-- MicroG -->
-  <project path="vendor/partner_gms" name="lineageos4microg/android_vendor_partner_gms" revision="master" remote="github"/>
+  <!-- Tracking my own fork project path="vendor/partner_gms" name="lineageos4microg/android_vendor_partner_gms" revision="master" remote="github"/-->
   <!--/manifest-->
  
 <!-- santoni -->
@@ -249,6 +249,10 @@
 
   <project path="frameworks/base" name="rr-r_frameworks_base" remote="om" revision="Q"/>
 
+<!-- Microg -->
+
+  <project path="vendor/partner_gms" name="android_vendor_partner_gms" revision="master" remote="om"/>
+  
 <!-- Clang -->
   
   <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                            remote="clang"    revision="10"              clone-depth="1" />
