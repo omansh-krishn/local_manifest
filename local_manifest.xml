@@ -2,6 +2,7 @@
 
 <manifest>
 
+<remote name="om" fetch="https://github.com/omansh-krishn"  />
 <remote name="santoni" fetch="https://gitlab.com/androidsantoni" />
 <remote name="clang" fetch="https://gitlab.com/clangsantoni" />
 <remote name="rr-r" fetch="https://github.com/ResurrectionRemix-Revived" revision="Q" review="" />
@@ -197,7 +198,7 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="rr-r" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="rr-r" />
   <!-- Frameworks -->
-  <project path="frameworks/base" name="frameworks_base" remote="rr-r" />
+  <!-- Tracking my own fork project path="frameworks/base" name="frameworks_base" remote="rr-r" /-->
   <project path="frameworks/av" name="frameworks_av" remote="rr-r" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="rr-r" />
   <project path="frameworks/native" name="frameworks_native" remote="rr-r" />
@@ -227,12 +228,22 @@
   <!-- MicroG -->
   <project path="vendor/partner_gms" name="lineageos4microg/android_vendor_partner_gms" revision="master" remote="github"/>
   <!--/manifest-->
-
+ 
+<!-- santoni -->
 <!-- Trees -->
 
   <project path="device/xiaomi/santoni"                     name="device-tree/device_xiaomi_santoni_ok" remote="santoni"  revision="{WIP}rr-10{WIP}" clone-depth="1" />
   <project path="vendor/xiaomi"                             name="vendor/vendor_xiaomi_santoni-ok"      remote="santoni"  revision="10.0"             clone-depth="1" />
   <project path="kernel/xiaomi/msm8937"                     name="jrhimel/kernel_xiaomi_santoni_msm4.9" remote="santoni"  revision="treble"          clone-depth="1" /> 
+
+<!-- Updater -->
+
+  <remove-project name="packages_apps_updater" />
+  <project path="packages/apps/Updater" name="rr_packages_apps_updater" remote="om" revision="Q"/>
+
+<!--framework-->
+
+  <project path="frameworks/base" name="rr-r_frameworks_base" remote="om" revision="Q"/>
 
 <!-- Clang -->
   
