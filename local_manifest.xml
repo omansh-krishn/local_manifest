@@ -188,7 +188,7 @@
   </project>
 
   <!-- Apps -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rr-r" />
+  <!-- Tracking my own fork project path="packages/apps/Settings" name="packages_apps_Settings" remote="rr-r" /-->
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="rr-r" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="rr-r" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="rr-r" />
@@ -252,7 +252,11 @@
 <!-- Microg -->
 
   <project path="vendor/partner_gms" name="android_vendor_partner_gms" revision="master" remote="om"/>
-  
+
+<!-- Settings -->
+
+  <project path="packages/apps/Settings" name="rr_packages_apps_Settings" remote="om" revision="Q" />
+
 <!-- Clang -->
   
   <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                            remote="clang"    revision="10"              clone-depth="1" />
