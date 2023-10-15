@@ -17,10 +17,6 @@
   <remove-project name="LineageOS/android_hardware_lineage_compat" />
   <project path="hardware/lineage/compat"                   name="android_hardware_lineage_compat"      remote="om"       revision="lineage-20.0" />
   
-<!-- OTA -->
-  <remove-project name="RisingTechOSS/android_packages_apps_Updater" />
-  <project path="packages/apps/Updater"                     name="rising_packages_apps_Updater"         remote="om"       revision="thirteen"         clone-depth="1" />
-
 <!-- OTA JSON-->
   <remove-project name="RisingOSS-devices/android_vendor_RisingOTA" />
   <project path="vendor/risingOTA"                          name="android_vendor_RisingOTA"             remote="om"       revision="thirteen"     />
