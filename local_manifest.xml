@@ -27,10 +27,6 @@
   <remove-project name="vendor_lineage"                            />
   <project path="vendor/lineage"                            name="alpha_vendor_lineage"                 remote="om"       revision="alpha-13" />
 
-<!--PixelFramework -->
-
-  <project path="vendor/pixel-framework"                    name="elpaablo/pixel-framework"             remote="gitlab"   revision="aosp-13"  />
-  
 <!-- Clang /-->
 
   <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                            remote="clang"    revision="14"               clone-depth="1" />
