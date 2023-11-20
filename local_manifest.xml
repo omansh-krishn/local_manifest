@@ -123,7 +123,7 @@
   <project path="frameworks/ml" name="LineageOS/android_frameworks_ml" groups="pdk" remote="github"/>
 
   <remove-project name="android_frameworks_opt_net_wifi"  remote="rr" />
-  <project path="frameworks/opt/net/wifi" name="LineageOS/android_frameworks_opt_net_wifi" groups="pdk" remote="github"/>
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk" remote="rr-r"/>
 
   <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" remote="aosp" />
   <project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="LineageOS/android_hardware_qcom_sm8150_data_ipacfg-mgr" groups="qcom_sm8150" remote="github">
@@ -166,6 +166,18 @@
 
   <project path="system/timezone" name="LineageOS-Revived/android_system_timezone" groups="pdk" remote="github"/>
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" remote="github"/>
+  <remove-project name="LineageOS/android_external_freetype" />
+  <project path="external/freetype" name="LineageOS-Revived/android_external_freetype" remote="github" />
+  <remove-project name="platform/tools/apksig" />
+  <project path="tools/apksig" name="LineageOS-Revived/android_tools_apksig" remote="github"/>
+  <remove-project name="LineageOS/android_external_aac" />
+  <project path="external/aac" name="LineageOS-Revived/android_external_aac" remote="github" />
+  <remove-project name="LineageOS/android_packages_providers_TelephonyProvider" />
+  <project path="packages/providers/TelephonyProvider" name="LineageOS-Revived/android_packages_providers_TelephonyProvider" remote="github" />
+  <remove-project name="platform/system/ca-certificates" />
+  <project path="system/ca-certificates" name="LineageOS-Revived/android_system_ca-certificates" remote="github" />
+
+
 
   <!--revived.xml-->
 <!--?xml version="1.0" encoding="UTF-8"?-->
