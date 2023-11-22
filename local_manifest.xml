@@ -20,6 +20,11 @@
   
   <remove-project name="hardware_custom_compat" />
   <project path="hardware/custom/compat"                    name="hardware_custom_compat"               remote="om"       revision="thirteen"       />
+
+<!-- Vendor -->
+
+  <remove-project name="vendor_aosp" />
+  <project path="vendor/aosp" name="pe_vendor_aosp" remote="om" revision="thirteen-plus" />
   
 <!-- OTA -->
 
