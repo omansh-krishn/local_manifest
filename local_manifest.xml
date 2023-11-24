@@ -26,6 +26,9 @@
   
   <remove-project name="vendor_lineage"                            />
   <project path="vendor/lineage"                            name="alpha_vendor_lineage"                 remote="om"       revision="alpha-13" />
+  
+  <remove-project name="vendor_addons" />
+  <project path="vendor/addons" name="alpha_vendor_addons" remote="om" revision="alpha-13" />
 
 <!-- Clang /-->
 
