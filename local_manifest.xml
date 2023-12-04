@@ -244,13 +244,13 @@
 <!-- santoni -->
 <!-- Trees -->
 
-  <project path="device/xiaomi/santoni"                     name="device-tree/device_xiaomi_santoni_ok" remote="santoni"  revision="{WIP}rr-10{WIP}" clone-depth="1" />
-  <project path="vendor/xiaomi"                             name="vendor/vendor_xiaomi_santoni-ok"      remote="santoni"  revision="10.0"             clone-depth="1" />
+  <project path="device/xiaomi/santoni"                     name="device/device_xiaomi_santoni" remote="santoni"  revision="{WIP}rr-10{WIP}" clone-depth="1" />
+  <project path="vendor/xiaomi"                             name="vendor/vendor_xiaomi_santoni"      remote="santoni"  revision="10.0"             clone-depth="1" />
   <project path="kernel/xiaomi/msm8937"                     name="jrhimel/kernel_xiaomi_santoni_msm4.9" remote="santoni"  revision="treble"          clone-depth="1" /> 
 
 <!-- Vendor -->
 
-  <project path="vendor/rr" name="vendor_resurrection" remote="om" revision="Q" />
+  <project path="vendor/rr" name="vendor_resurrection"  remote="om" revision="Q" />
 
 <!-- Updater -->
 
