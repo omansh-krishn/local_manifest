@@ -8,9 +8,9 @@
 
 <!-- Trees /-->
 
-  <project path="device/xiaomi/santoni"                     name="device-tree/device_xiaomi_santoni_ok" remote="santoni"  revision="alpha-13"         clone-depth="1" />
-  <project path="vendor/xiaomi/santoni"                     name="vendor/vendor_xiaomi_santoni"         remote="santoni"  revision="13.0"             clone-depth="1" />
-  <project path="kernel/xiaomi/msm8937"                     name="kernel/kernel-xiaomi-msm8937_ok"      remote="santoni"  revision="13"               clone-depth="1" /> 
+  <project path="device/xiaomi/santoni"                     name="device/device_xiaomi_santoni" remote="santoni"  revision="alpha-13"         clone-depth="1" />
+  <project path="vendor/xiaomi/santoni"                     name="vendor/vendor_xiaomi_santoni" remote="santoni"  revision="13.0"             clone-depth="1" />
+  <project path="kernel/xiaomi/msm8937"                     name="kernel/kernel_xiaomi_msm8937" remote="santoni"  revision="13"               clone-depth="1" /> 
 
 <!-- hardware_custom_compat /-->
 
