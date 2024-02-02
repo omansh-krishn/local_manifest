@@ -34,8 +34,8 @@
   <project path="packages/apps/Settings"                    name="packages_apps_Settings"               remote="om"       revision="thirteen-plus"  />
 
 <!-- Clang -->
-  
-  <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                            remote="clang"    revision="14"                       clone-depth="1" />
+
+  <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="proton-clang"                 remote="om"       revision="master"               clone-depth="1" />
 
 </manifest>
 
