@@ -15,6 +15,11 @@
 <!-- Clang -->
 
   <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="proton-clang"                 remote="om"       revision="master"               clone-depth="1" />
+  
+<!-- Connectivity -->
+
+  <remove-project name="crdroidandroid/android_packages_modules_Connectivity" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity"    remote="om"       revision="14.0"                 clone-depth="1" />
 
 </manifest>
 
