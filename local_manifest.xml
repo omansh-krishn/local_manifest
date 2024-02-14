@@ -8,13 +8,18 @@
 
 <!-- Trees -->
 
-  <project path="device/xiaomi/santoni"                     name="device/device_xiaomi_santoni" remote="santoni"  revision="alpha-14-dev" clone-depth="1" />
-  <project path="vendor/xiaomi/santoni"                     name="vendor/vendor_xiaomi_santoni" remote="santoni"  revision="14"           clone-depth="1" />
-  <project path="kernel/xiaomi/msm8937"                     name="kernel/kernel_xiaomi_msm8937" remote="santoni"  revision="13"           clone-depth="1" /> 
+  <project path="device/xiaomi/santoni"                     name="device/device_xiaomi_santoni"  remote="santoni" revision="alpha-14-dev" clone-depth="1" />
+  <project path="vendor/xiaomi/santoni"                     name="vendor/vendor_xiaomi_santoni"  remote="santoni" revision="14"           clone-depth="1" />
+  <project path="kernel/xiaomi/msm8937"                     name="kernel/kernel_xiaomi_msm8937"  remote="santoni" revision="13"           clone-depth="1" /> 
  
 <!-- Clang -->
 
-  <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="proton-clang"                 remote="om"       revision="master"       clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="proton-clang"                  remote="om"      revision="master"       clone-depth="1" />
+
+<!-- Connectivity -->
+
+  <remove-project name='crdroidandroid/android_packages_modules_Connectivity' />
+  <project path='packages/modules/Connectivity'             name="android_packages_modules_Connectivity" remote="om" revision="14.0"      clone-depth=1 />
 
 </manifest>
 
