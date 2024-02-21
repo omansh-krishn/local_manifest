@@ -17,9 +17,5 @@
 
   <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="proton-clang"                 remote="om"       revision="master"       clone-depth="1" />
 
-<!-- KSU -->
-
-  <project path="kernel/xiaomi/msm8937/KernelSU"            name="KernelSU"                     remote="tiann"    revision="2fec279de373758b4ea965b488dac533fd0ab3f0" />
-
 </manifest>
 
