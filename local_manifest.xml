@@ -19,7 +19,7 @@
 
 <!-- KSU -->
 
-  <project path="kernel/xiaomi/msm8937/KernelSU"            name="KernelSU"                     remote="tiann"    revision="refs/tags/v0.7.6"             />
+  <project path="kernel/xiaomi/msm8937/KernelSU"            name="KernelSU"                     remote="tiann"    revision="2fec279de373758b4ea965b488dac533fd0ab3f0" />
 
 </manifest>
 
