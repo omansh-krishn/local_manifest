@@ -13,17 +13,12 @@
   <project path="vendor/xiaomi/santoni"                     name="vendor/vendor_xiaomi_santoni" remote="santoni"  revision="14"              clone-depth="1" />
   <project path="kernel/xiaomi/msm8937"                     name="kernel/kernel_xiaomi_msm8937" remote="santoni"  revision="13-ksu"          clone-depth="1" /> 
 
-<!-- OTA JSON-->
-
-  <remove-project name="RisingOSS-devices/android_vendor_RisingOTA" />
-  <project path="vendor/risingOTA"                          name="android_vendor_RisingOTA"     remote="om"       revision="thirteen"  />
-
 <!-- Clang -->
 
   <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="proton-clang"                 remote="om"       revision="master"          clone-depth="1" />
 
 <!-- KSU -->
 
-  <project path="kernel/xiaomi/msm8937/KernelSU"            name="KernelSU"                     remote="tiann"    revision="refs/tags/v0.7.6"  />
+  <project path="kernel/xiaomi/msm8937/KernelSU"            name="KernelSU"                     remote="tiann"    revision="main"  />
 
 </manifest>
