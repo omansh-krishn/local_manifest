@@ -16,5 +16,10 @@
 
   <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                 remote="clang"       revision="14"       clone-depth="1" />
 
+<!-- lineage libcxx -->
+
+  <remove-project name="platform/external/libcxx" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="lineage" revision="lineage-20.0"/>
+
 </manifest>
 
