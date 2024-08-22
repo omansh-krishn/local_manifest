@@ -14,7 +14,7 @@
 
 <!-- Clang -->
 
-  <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                    remote="clang"    revision="master"       />
+  <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                    remote="clang"    revision="14"           />
 
 </manifest>
 
