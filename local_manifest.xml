@@ -14,7 +14,7 @@
 
 <!-- Clang -->
 
-  <project path="prebuilts/clang/host/linux-x86/custom_clang" name="proton-clang" remote="om" revision="master" />
+  <project path="prebuilts/clang/host/linux-x86/custom_clang" name="zyc_clang" remote="clang" revision="14" />
 
 </manifest>
 
