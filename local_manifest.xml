@@ -16,5 +16,9 @@
 
   <project path="prebuilts/clang/host/linux-x86/custom_clang" name="zyc_clang" remote="clang" revision="14" />
 
+<!-- fw/b -->
+  <remove-project name="android_frameworks_base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ros" revision="r11.0-r-mirror"/>
+
 </manifest>
 
