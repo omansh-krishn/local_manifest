@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+<remote name="mithorium" fetch="https://gitlab.com/androidsantoni/mithorium" />
+<remote name="lineage"   fetch="https://github.com/lineageos"  />
+<remote name="clang"     fetch="https://gitlab.com/clangsantoni"   />
+
+<!-- Clang -->
+  <project path="prebuilts/clang/host/linux-x86/zyc_clang"  name="zyc_clang"                 remote="clang"       revision="14" />
+
+ <!-- Common -->
+  <project path="device/xiaomi/mithorium-common"          name="device/common" remote="mithorium" revision="a14/master" />
+  <project path="vendor/xiaomi/mithorium-common"          name="vendor/common" remote="mithorium" revision="a14/master" />
+  <project path="vendor/xiaomi/mithorium-common-graphics" name="vendor/common-graphics" remote="mithorium" revision="a11/master"/>
+
+ <!-- Common - Kernel 4.19 -->
+  <project path="vendor/xiaomi/mithorium-common-4.19" name="vendor/common-4.19" remote="mithorium" revision="a14/master" />
+
+ <!-- Hardware -->
+  <project path="hardware/mithorium/common" name="hardware/common" remote="mithorium" revision="lineage">
+    <linkfile src="_Android.mk" dest="hardware/mithorium/Android.mk" />
+    <linkfile src="mithorium_qcom_hals.mk" dest="hardware/mithorium/mithorium_qcom_hals.mk" />
+
+    <linkfile src="guard-generic.bp" dest="hardware/mithorium/audio/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0/Android.bp" />
+    <linkfile src="guard-generic.bp" dest="hardware/mithorium/audio/lineage-21.0-caf-msm8953/Android.bp" />
+    <linkfile src="guard-generic.bp" dest="hardware/mithorium/display/LA.UM.8.6.2.r1-09500-89xx.0/Android.bp" />
+
+    <linkfile src="guard-qcom-qssi-display-lineage-19.1.bp" dest="hardware/mithorium/display/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0/Android.bp" />
+    <linkfile src="guard-qcom-qssi-display.mk"              dest="hardware/mithorium/display/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0/Android.mk" />
+
+    <linkfile src="guard-qcom-qssi-display-lineage-19.1.bp" dest="hardware/mithorium/display/lineage-21.0-caf-msm8953/Android.bp" />
+    <linkfile src="guard-qcom-qssi-display.mk"              dest="hardware/mithorium/display/lineage-21.0-caf-msm8953/Android.mk" />
+  </project>
+
+ <!-- Hardware - display-commonsys-intf -->
+  <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="lineage" />
+  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="lineage" />
+
+ <!-- Hardware - LA.UM.8.6.2 -->
+  <project path="hardware/mithorium/display/LA.UM.8.6.2.r1-09500-89xx.0/display" name="hardware/display" remote="mithorium" revision="mithorium/LA.UM.8.6.2.r1-09500-89xx.0"/>
+
+ <!-- Hardware - LA.UM.9.6.3 -->
+  <project path="hardware/mithorium/audio/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0/hal" name="hardware/audio" remote="mithorium" revision="mithorium/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0"/>
+  <project path="hardware/mithorium/media/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0/hal" name="hardware/media" remote="mithorium" revision="mithorium/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0"/>
+  <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0/hal" name="hardware/display" remote="mithorium" revision="mithorium/LA.UM.9.6.4.r2-03900-89xx.QSSI13r2.0"/>
+
+ <!-- Hardware - LineageOS (based on LA.UM.10.6.2 tags) -->
+  <project path="hardware/mithorium/media/lineage-21.0-caf-msm8953/hal" name="android_hardware_qcom_media" revision="lineage-22.1-caf-msm8953" remote="lineage" />
+  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/hal" name="android_hardware_qcom_display" revision="lineage-22.1-caf-msm8953" remote="lineage" />
+
+ <!-- Mi8937 -->
+  <project path="device/xiaomi/Mi8937"        name="device/mi8937" remote="mithorium" revision="alpha-14-dev" />
+  <project path="vendor/xiaomi/Mi8937"        name="vendor/mi8937" remote="mithorium" revision="a14/master"/>
+  <project path="kernel/xiaomi/mithorium-4.19/kernel" name="kernel/4.19" remote="mithorium" revision="a13" />
+  <project path="device/xiaomi/land-camera"   name="device/camera/land"   remote="mithorium" revision="sairam/a11/master"/>
+  <project path="device/xiaomi/mi8937-camera" name="device/camera/mi8937" remote="mithorium" revision="a11/master"/>
+  <project path="device/xiaomi/prada-camera"  name="device/camera/prada"  remote="mithorium" revision="a11/master"/>
+
+</manifest>
