@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="mithorium"
+           fetch="https://gitlab.com/androidsantoni/mithorium"
+           revision="a11/master" />
+
+ <!-- Dependencies -->
+  <project path="hardware/lineage/compat" name="hardware/lineage/compat" remote="mithorium" revision="lineage-18.1"/>
+
+ <!-- Replacements -->
+  <remove-project name="android_packages_apps_FMRadio"/>
+  <project path="packages/apps/FMRadio" name="packages/apps/FMRadio" remote="mithorium" revision="lineage-18.1"/>
+
+ <!-- Common -->
+  <project path="device/xiaomi/mithorium-common" name="device/common" groups="device" remote="mithorium"/>
+  <project path="vendor/xiaomi/mithorium-common" name="vendor/common" groups="device" remote="mithorium"/>
+  <project path="vendor/xiaomi/mithorium-common-graphics" name="vendor/common-graphics" groups="device" remote="mithorium" revision="a11/master"/>
+
+ <!-- Common - Kernel 4.19 -->
+  <project path="vendor/xiaomi/mithorium-common-4.19" name="vendor/common-4.19" groups="device" remote="mithorium"/>
+
+ <!-- SEPolicy -->
+  <project path="device/qcom/sepolicy-legacy-um_mithorium" name="sepolicy/mithorium" groups="qcom,pdk-qcom" remote="mithorium" revision="lineage-18.1-legacy-um"/>
+
+ <!-- Hardware -->
+  <project path="hardware/mithorium/common" name="mithorium/common" groups="device" remote="mithorium" revision="lineage">
+    <linkfile src="_Android.mk" dest="hardware/mithorium/Android.mk" />
+    <linkfile src="mithorium_qcom_hals.mk" dest="hardware/mithorium/mithorium_qcom_hals.mk" />
+
+    <linkfile src="guard-generic.bp" dest="hardware/mithorium/audio/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/Android.bp" />
+    <linkfile src="guard-generic.bp" dest="hardware/mithorium/audio/lineage-18.1-caf-msm8953/Android.bp" />
+    <linkfile src="guard-generic.bp" dest="hardware/mithorium/display/LA.UM.8.6.2.r1-09500-89xx.0/Android.bp" />
+
+    <linkfile src="guard-qcom-qssi-display-lineage-18.1.bp" dest="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/Android.bp" />
+    <linkfile src="guard-qcom-qssi-display.mk"              dest="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/Android.mk" />
+
+    <linkfile src="guard-qcom-qssi-display-lineage-18.1.bp" dest="hardware/mithorium/display/lineage-18.1-caf-msm8953/Android.bp" />
+    <linkfile src="guard-qcom-qssi-display.mk"              dest="hardware/mithorium/display/lineage-18.1-caf-msm8953/Android.mk" />
+  </project>
+
+ <!-- Hardware - display-commonsys-intf -->
+  <!-- remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" -->
+  <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom"/>
+  <project path="hardware/mithorium/display/lineage-18.1-caf-msm8953/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom"/>
+
+ <!-- Hardware - LA.UM.8.6.2 -->
+  <project path="hardware/mithorium/display/LA.UM.8.6.2.r1-09500-89xx.0/display" name="hardware/display" groups="device" remote="mithorium" revision="mithorium/LA.UM.8.6.2.r1-09500-89xx.0"/>
+
+ <!-- Hardware - LA.UM.9.6.3 -->
+  <project path="hardware/mithorium/audio/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/hal" name="hardware/audio" groups="device" remote="mithorium" revision="mithorium/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0"/>
+  <project path="hardware/mithorium/media/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/hal" name="hardware/media" groups="device" remote="mithorium" revision="mithorium/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0"/>
+  <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/hal" name="hardware/display" groups="device" remote="mithorium" revision="mithorium/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0"/>
+
+ <!-- Hardware - LineageOS (based on LA.UM.9.6.2.r1-04800-89xx.0 tag) -->
+  <project path="hardware/mithorium/media/lineage-18.1-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-18.1-caf-msm8953" />
+  <project path="hardware/mithorium/display/lineage-18.1-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-18.1-caf-msm8953" />
+
+ <!-- MiThoriumSSI >
+  <project path="device/xiaomi/MiThoriumSSI" name="android_device_xiaomi_MiThoriumSSI" groups="device" remote="mithorium" -->
+
+ <!-- Mi8937 -->
+  <project path="device/xiaomi/Mi8937"        name="device/Mi8937" groups="device" remote="mithorium" revision="om/a11/master/xd"/>
+  <project path="vendor/xiaomi/Mi8937"        name="vendor/Mi8937" groups="device" remote="mithorium"/>
+  <project path="device/xiaomi/land-camera"   name="device/camera/land"   groups="device" remote="mithorium" revision="sairam/a11/master"/>
+  <project path="device/xiaomi/mi8937-camera" name="device/camera/mi8937" groups="device" remote="mithorium" revision="a11/master"/>
+  <project path="device/xiaomi/prada-camera"  name="device/camera/prada"  groups="device" remote="mithorium" revision="a11/master"/>
+
+ <!-- Mi439 >
+  <project path="device/xiaomi/Mi439"  name="android_device_xiaomi_Mi439"     groups="device" remote="mithorium"/>
+  <project path="vendor/xiaomi/Mi439"  name="proprietary_vendor_xiaomi_Mi439" groups="device" remote="mithorium"/>
+  <project path="vendor/miuicamera"    name="mirror/arrowos/miuicamera"       remote="github"    revision="arrow-11.0-a3" -->
+
+ <!-- Tiare >
+  <project path="device/xiaomi/Tiare" name="device/tiare"     groups="device" remote="mithorium"/>
+  <project path="vendor/xiaomi/Tiare" name="vendor/tiare" groups="device" remote="mithorium" -->
+
+ <!-- oxygen >
+  <project path="kernel/xiaomi/oxygen" name="kernel/4.9" remote="mithorium" revision="oxygen/a12/master"/>
+  <project path="device/xiaomi/oxygen" name="android_device_xiaomi_oxygen"     groups="device" remote="mithorium"/>
+  <project path="vendor/xiaomi/oxygen" name="proprietary_vendor_xiaomi_oxygen" groups="device" remote="mithorium" -->
+
+ <!-- vince >
+  <project path="kernel/xiaomi/vince" name="kernel/4.9" remote="mithorium" revision="vince/a12/master"/>
+  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince"     groups="device" remote="mithorium"/>
+  <project path="vendor/xiaomi/vince" name="proprietary_vendor_xiaomi_vince" groups="device" remote="mithorium" -->
+
+ <!-- uter >
+  <project path="kernel/xiaomi/uter" name="kernel/4.9" remote="mithorium" revision="uter/a12/master"/>
+  <project path="device/xiaomi/uter" name="android_device_xiaomi_uter"     groups="device" remote="mithorium"/>
+  <project path="vendor/xiaomi/uter" name="proprietary_vendor_xiaomi_uter" groups="device" remote="mithorium" -->
+
+ <!-- onc >
+  <project path="device/xiaomi/onc" name="android_device_xiaomi_onc"     groups="device" remote="mithorium"/>
+  <project path="vendor/xiaomi/onc" name="proprietary_vendor_xiaomi_onc" groups="device" remote="mithorium" -->
+
+ <!-- msm8937 >
+  <project path="device/qualcomm/msm8937" name="android_device_qualcomm_msm8937"     groups="device" remote="mithorium"/>
+  <project path="vendor/qualcomm/msm8937" name="proprietary_vendor_qualcomm_msm8937" groups="device" remote="mithorium" -->
+
+</manifest>
